@@ -2,8 +2,7 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /main/APLICATIVO
-
+WORKDIR /main/aplicativo
 # Expose port 3000
 EXPOSE 3000
 
