@@ -13,7 +13,7 @@ COPY . /main
 # Install the application dependencies
 RUN npm install
 
-RUN ionic serve
+RUN cd aplicativo
 # Define the entry point for the container
 # CMD ["npm", "start"]
 CMD ["ionic", "serve"]
