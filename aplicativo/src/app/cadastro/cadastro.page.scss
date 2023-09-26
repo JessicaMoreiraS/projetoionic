@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+}
+ion-content{
+  background: linear-gradient(to bottom, #800080, #9370DB, #87CEEB);
+  height: 100vh;
+}
+ion-grid{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #800080, #9370DB, #87CEEB);
+}
+form{
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px 15px #87CEEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form ion-input{
+  width: 90%;
+  margin: 5%;
+}
+form ion-button{
+  margin-bottom: 5%;
+}

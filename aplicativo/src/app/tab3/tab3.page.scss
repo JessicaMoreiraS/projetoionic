@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+}
+ion-searchbar {
+  --background: #7852b4;
+  --color: #fff;
+  --placeholder-color: #fff;
+  --icon-color: #fff;
+  --clear-button-color: #fff;
+
+  --border-radius: 4px;
+}
+
+ion-searchbar.ios.custom {
+  --cancel-button-color: #7852b4;
+}
+
+ion-searchbar.md.custom {
+  --cancel-button-color: #fff;
+}
+ion-list{
+  background-color: rgb(240, 244, 248);
+  min-height: 100%;
+}

@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Atualizar dados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="conteudo">
+    <div class="dados">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="{{user?.img}}" />
+      </ion-avatar>
+
+      <ion-label>{{user?.nome}}</ion-label>
+      <ion-label>{{user?.email}}</ion-label>
+    </div>
+
+    <div class="formulario">
+      <form [formGroup]="formDataAtualizar" (ngSubmit)="onSubmitUp()">
+
+        <ion-input formControlName="nome" type="text" label="Nome" label-placement="floating" fill="outline" placeholder="Nome"></ion-input>
+        <br>
+        <ion-input formControlName="email" type="email" label="Email" label-placement="floating" fill="outline" placeholder="Email"></ion-input>
+        <br>
+        <ion-input formControlName="img" type="text" label="Link Imagem Perfil" label-placement="floating" fill="outline" placeholder="Link Imagem Perfil"></ion-input>
+
+        <ion-button type="submit"color="dark">Atualizar</ion-button>
+      </form>
+    </div>
+  </div>
+
+</ion-content>

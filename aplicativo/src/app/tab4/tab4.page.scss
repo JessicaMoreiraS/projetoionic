@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+}
+ion-title{
+  background-color: #7852b4;
+  color: #f7f7f7;
+}
+ion-col{
+  display: flex;
+  align-items: center;
+}
+.alinhaBtnSair{
+  justify-content: end;
+}
+.userEmail{
+  text-align: center;
+  padding-bottom: 3%;
+  border-bottom: solid 1px rgb(182, 182, 182);
+}
+.btnAlterarDados{
+  color: #7852b4;
+}

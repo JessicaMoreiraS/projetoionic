@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Playlists
+    </ion-title>
+    <div class="controlesSom">
+      <ion-button fill="outline" color="medium" (click)="pararMusica()">
+        <ion-icon name="volume-mute-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="outline" color="medium" (click)="menosVolumeMusica()">
+        <ion-icon name="volume-low-outline"></ion-icon>-
+      </ion-button>
+      <ion-button fill="outline" color="medium" (click)="maisVolumeMusica()">
+        <ion-icon name="volume-high-outline"></ion-icon>+
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+
+    <ion-row *ngFor="let categoria of playlists">
+      <h3>{{categoria}}</h3>
+      <hr>
+        <ion-col size="12">
+            <ion-segment scrollable="">
+              <ng-container *ngFor="let musica of musicas">
+                <ion-segment-button (click)="playMusic(musica)" *ngIf="musica.categoria.toLowerCase() === categoria.toLowerCase()" [value]="musica.nome">
+
+                  <ion-card [hidden]="musica.categoria.toLowerCase() === 'latina'">
+                    <img alt="Silhouette of mountains" src="{{musica.img}}" />
+                    <ion-card-header style="white-space: normal;">
+                      {{musica.nome}}
+                    </ion-card-header>
+
+                    <ion-card-content style="white-space: normal;">
+                      {{musica.cantor}}
+                    </ion-card-content>
+                  </ion-card>
+                </ion-segment-button>
+              </ng-container>
+            </ion-segment>
+        </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+
+
+
+
+

@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="8">
+            Perfil
+          </ion-col>
+          <ion-col size="4" class="alinhaBtnSair">
+            <ion-button href="../index"  color="light">
+              <ion-icon name="exit"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="10">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img alt="Silhouette of a person's head" src="{{user?.img}}" />
+          </ion-avatar>
+
+          <ion-label>{{user?.nome}}</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="2">
+        <ion-button fill="clear" href="../alterar-dados-user" class="btnAlterarDados">
+          <ion-icon name="pencil-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <div class="userEmail">{{user?.email}}</div>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="settings" slot="start"></ion-icon>
+      <ion-label>Configurações</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="key" slot="start"></ion-icon>
+      <ion-label>Minhas informações</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="chatbubbles" slot="start"></ion-icon>
+      <ion-label>Contatar suporte</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="clipboard" slot="start"></ion-icon>
+      <ion-label>Termos de uso</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="star" slot="start"></ion-icon>
+      <ion-label>Avaliar</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon aria-hidden="true" name="share" slot="start"></ion-icon>
+      <ion-label>Compartilhar</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

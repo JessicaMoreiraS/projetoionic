@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- <ion-title> -->
+      <!-- Tab 3 -->
+      <!-- <ion-searchbar [debounce]="1000" color="tertiary" (ionInput)="handleInput($busca)"  search-icon="search-circle" placeholder="Custom Search Icon"></ion-searchbar> -->
+
+      <ion-searchbar
+      class="custom"
+      showCancelButton="focus"
+      label="Alphanumeric Characters"
+      [value]="inputModel"
+      (ionInput)="onInput($event)"
+      #ionInputEl
+      search-icon="search-circle"
+      placeholder="Buscar Música"
+    ></ion-searchbar>
+      <!-- </ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item *ngFor="let result of results">
+      <ion-label>{{ result.nome }} - {{result.cantor}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

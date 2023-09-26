@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+}
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+ion-title{
+  background-color: #7852b4;
+  padding: 4.31%;
+  color: #f7f7f7;
+}
+ion-card{
+  width: 250px;
+}
+ion-icon {
+  font-size: 64px;
+  color: rgb(191, 0, 255);
+}
+.controlesSom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.controlesSom ion-button ion-icon{
+  width: 19px;
+  height: 19px;
+}

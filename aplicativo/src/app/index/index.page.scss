@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+*{
+  font-family: 'Mooli', sans-serif;
+}
+ion-grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #800080, #9370DB, #87CEEB);
+}
+ion-row{
+  margin: 1% 0;
+}
+img{
+  margin-bottom: 8%;
+}
+ion-button{
+  width: 150px;
+}
+

@@ -1,0 +1,39 @@
+.conteudo{
+  background: linear-gradient(to bottom, #800080, #9370DB, #87CEEB);
+}
+ion-avatar {
+  width: 200px;
+  height: 200px;
+  margin: 2%;
+}
+.dados{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding: 5%;
+}
+ion-label{
+  margin: 2%;
+}
+.formulario{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+form{
+  background-color: aliceblue;
+  width: 90%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+form ion-input{
+  border-radius: 10px;
+}
