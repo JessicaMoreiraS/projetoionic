@@ -10,4 +10,4 @@ RUN npm install @angular-devkit/build-angular
 
 COPY . /main
 
-CMD ["ionic", "serve"]
+CMD ["ionic", "serve", "--host", "0.0.0.0"]
