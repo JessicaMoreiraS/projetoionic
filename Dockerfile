@@ -15,4 +15,5 @@ RUN npm install
 
 RUN ionic serve
 # Define the entry point for the container
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+CMD ["ionic", "serve"]
