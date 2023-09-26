@@ -2,7 +2,7 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /main
+WORKDIR /main/APLICATIVO
 
 # Expose port 3000
 EXPOSE 3000
@@ -13,7 +13,6 @@ COPY . /main
 # Install the application dependencies
 RUN npm install
 
-RUN cd aplicativo
 # Define the entry point for the container
 # CMD ["npm", "start"]
 CMD ["ionic", "serve"]
