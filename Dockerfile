@@ -1,21 +1,23 @@
-# Use a imagem oficial do Node.js como base
 FROM node:18
 
-# Defina o diretório de trabalho no container
+# Set the working directory in the container
 WORKDIR /main/aplicativo
 
-# Exponha a porta em que o aplicativo Ionic está rodando (geralmente a porta 8100)
-EXPOSE 3000
+# Expose the port on which the Ionic application is running (usually port 8100)
+EXPOSE 8100
 
-# Instale o Ionic CLI e o Angular CLI globalmente
+# Install the Ionic CLI and Angular CLI globally
 RUN npm install -g @ionic/cli@latest @angular/cli@latest
 
-# Instale as dependências do projeto (você pode usar um arquivo package-lock.json se houver)
+# Install project dependencies (you can use a package-lock.json file if available)
 COPY package.json package-lock.json* ./
 RUN npm install
 
-# Copie todos os arquivos do projeto para o diretório de trabalho
+# Copy all project files to the working directory
 COPY . .
 
-# Comando para iniciar o servidor Ionic (com a opção --host 0.0.0.0 para torná-lo acessível de fora do contêiner)
+# Set the working directory to the Ionic project directory
+WORKDIR /main/aplicativo
+
+# Command to start the Ionic server (with the --host 0.0.0.0 option to make it accessible from outside the container)
 CMD ["ionic", "serve", "--host", "0.0.0.0"]
