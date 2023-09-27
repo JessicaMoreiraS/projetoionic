@@ -5,7 +5,7 @@ FROM node:18
 WORKDIR /main/aplicativo
 
 # Exponha a porta em que o aplicativo Ionic está rodando (geralmente a porta 8100)
-EXPOSE 8100
+EXPOSE 3000
 
 # Instale o Ionic CLI e o Angular CLI globalmente
 RUN npm install -g @ionic/cli@latest @angular/cli@latest
