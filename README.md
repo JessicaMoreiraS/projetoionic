@@ -13,7 +13,7 @@ aplicativo de música feito com Ionic e Angular, com sistema de login, logout, c
     Tela de cadastro e login
     <div align="center">
       <br>
-      <img src="https://github.com/JessicaMoreiraS/projetoionic/assets/100448388/10a8b840-c6d1-4c38-b8f9-794e217fff82" width="75%">
+      <img src="https://github.com/JessicaMoreiraS/projetoionic/assets/100448388/57796cde-d268-42f6-a0f7-b2959fa4d976" width="75%">
     </div>
   </li>
   <br><br><br>
