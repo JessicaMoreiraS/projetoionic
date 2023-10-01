@@ -1,5 +1,14 @@
 # projeto Ionic & Angular
 aplicativo de música feito com Ionic e Angular, com sistema de login, logout, cadastro, update do perfil e músicas
+
+Para executar o programa baixe ou clone o repositório, dentro do diretorio "aplicativo" abra o terminal (CMD) e execute:
+
+```cmd
+ionic serve
+```
+O aplicativo será executado em: http://localhost:8100/
+Você também pode iniciar o Ionic Preview em seu Visual Studio Code para visualizar conforme as imagens abaixo
+
 <ul>
   <li>
     Tela inicial
